@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CodingPedia</title>
+    <link rel="stylesheet" href="codingpedia.css">
+  </head>
+  <body>
+    <header class="box">
+      <h1>Welcome to CodingPedia!</h1>
+      <nav class="box">
+        <ul>
+          <li><a href="index.html" aria-current="page">Index</a></li>
+          <li><a href="php.html">PHP</a></li>
+          <li><a href="sql.html">SQL</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+        <main class="box">
+          <p>CodingPedia is a collective encyclopedia project on the Internet aiming to be universal and multi-lingual which functions as a wiki.<br>
+          CodingPedia has for goal to offer freely reusable objective and verifiable content that anyone can modify and improve.</p>
+          <form method="post">
+            <div class="field">
+              <label for="firstname">First name:</label>
+              <input type="text" id="firstname" name="firstname" required>
+            </div>
+            <div class="field">
+              <label for="lastname">Last name:</label>
+              <input type="text" id="lastname" name="lastname" required>
+            </div>
+            <div class="field">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="field">
+              <label for="age">Age:</label>
+              <input type="number" id="age" name="age" min="3" max="99">
+            </div>
+            <div class="field">
+              <label for="phone">Phone number:</label>
+              <input type="tel" id="phone" name="phone" minlength="10" maxlength="10" pattern="[0-9]{10}">
+            </div>
+            <fieldset class="field">
+              <legend>Sex:</legend>
+              <div class="radios">
+                <input type="radio" id="male" name="sex" value="male" checked>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="sex" value="female">
+                <label for="female">Female</label>
+              </div>
+            </fieldset>
+            <div class="field">
+              <label for="haircolor">Hair color:</label>
+              <input type="color" id="haircolor" name="haircolor">
+            </div>
+            <div class="field">
+              <label for="date">Date:</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="field">
+              <label for="technology">Technology:</label>
+              <select id="technology" name="technology">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="php">PHP</option>
+                <option value="sql">SQL</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="question">Question:</label>
+              <textarea id="question" name="question" required></textarea>
+            </div>
+            <div class="field">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+          <div class="moving_square"></div>
+        </main>
+        <aside class="box">
+          <p>Hello there! I am Lucas, a business school student discovering web development in this bootcamp.</p>
+        </aside>
+    </div>
+    <footer class="box">
+      <address>Lucas Muller - 175 rue saint-honoré, 75001 Paris, France - <a href="tel:+33600000000">06 00 00 00 00</a></address>
+    </footer>
+  </body>
+</html>

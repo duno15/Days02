@@ -1,0 +1,51 @@
+.box {
+  border: 2px solid black;
+  margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+body {
+  background-color: grey;
+}
+
+.box {
+  background-color: white;
+}
+
+/* Flexbox: main (80%) and aside side by side */
+.content {
+  display: flex;
+}
+
+main {
+  flex: 4 1 0;
+}
+
+aside {
+  flex: 1 1 0;
+}
+
+/* Grid: title / navigation menu with a 5 to 1 ratio */
+header {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  align-items: center;
+}
+
+/* Moving square */
+.moving_square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin-bottom: 320px;
+  animation: square-cycle 5s linear 5;
+}
+
+@keyframes square-cycle {
+  0%   { transform: translate(0, 0);         background-color: red; }
+  25%  { transform: translate(0, 300px);     background-color: green; }
+  50%  { transform: translate(300px, 300px); background-color: blue; }
+  75%  { transform: translate(300px, 0);     background-color: yellow; }
+  100% { transform: translate(0, 0);         background-color: red; }
+}
